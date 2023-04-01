@@ -11,6 +11,7 @@
     - [Primitives](./transactions/primitives.md)
     - [Monitoring UTXOs](./transactions/monitoring.md)
     - [Creation](./transactions/creation.md)
+    - [Fee Calculation](./transactions/fee_calculation.md)
     - [Constraints](./transactions/constraints.md)
     - [Signing](./transactions/signing.md)
     - [Virtual Transactions](./transactions/virtual.md)
