@@ -1,3 +1,5 @@
+<img align="right" alt="Rust" height="40px" style="margin: 5px;" src="images/kaspa.svg" />
+
 # Introduction
 
 
@@ -17,6 +19,9 @@ Please contribute! This `mdbook` is very easy to edit. If you would like to sugg
 
 <br/>&nbsp;<br/>
 
+This project is built using multi-platform Rust crates (libraries). The Rust framework is exposed to JavaScript via WASM, while the Rust framework itself can be built to run on any native platform (i.e. for Windows, Linux and MacOS).
+
+
 # WASM SDK
 
 This WASM SDK is generated directly from the Rusty Kaspa codebase, where Rust functions are compiled
@@ -28,16 +33,27 @@ turning all RPC calls into async function calls in JavaScript (in Rust these fun
 The WASM SDK offers bindings for Transaction generation, address management, transaction signing as 
 well as various helper classes for UTXO management.
 
-
 # Documentation
+
+JavaScript and Rust API documentation is available at the following URLs:
 
 * [Rust documentation](https://docs.rs/kaspa-wasm/latest/kaspa_wasm/) (Rustdoc)
 * [JavaScript documentation](https://aspectron.com/docs/kaspa-wasm/) (JSDoc)
+
 
 # Redistributables
 
 WASM redistributables are available prebuilt for web browsers and for nodejs. The entire framework can also be built from Rusty Kaspa sources (into WASM) or used within Rust directly for Rust-based application integration.
 
-You can currently download the latest version of the WASM SDK and to gRPC proxy from:
+You can currently download the latest version of the WASM SDK and the gRPC proxy from:
 [https://aspectron.com/en/projects/kaspa-wasm.html](https://aspectron.com/en/projects/kaspa-wasm.html)
 
+# Git
+
+This SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/rusty-kaspa/rusty-kaspa](https://github.com/rusty-kaspa/rusty-kaspa)
+
+The following crates implement key functionality exposed by this SDK:
+* Kaspa Consensuse Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src)
+* WASM SDK: [https://github.com/kaspanet/rusty-kaspa/tree/master/wasm](https://github.com/kaspanet/rusty-kaspa/tree/master/wasm)
+* Wallet Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src)
+* RPC Client: [https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src](https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src)

@@ -1,5 +1,10 @@
 # Fee Calculation
 
+While the transaction fee is a single amount, it is comprised of two amounts:
+- Minimum Transaction Fee (determined from the transaction size)
+- Priority fee (determined by the user)
+
+The priority fee is any amount above the minimum transaction fee.
 
 ## Using SDK
 
