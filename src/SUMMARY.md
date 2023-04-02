@@ -4,6 +4,7 @@
 
 - [WASM SDK](./wasm_sdk.md)
 - [Running](./running.md)
+- [Integrating](./integrating.md)
 - [Connecting](./connecting.md)
 - [RPC](./rpc.md)
 - [Architecture](./architecture.md)
@@ -18,7 +19,7 @@
     - [Signing](./transactions/signing.md)
     - [Virtual Transactions](./transactions/virtual.md)
 - [Wallets](./wallets.md)
-    - [HD Addresses](./wallets/hd_addresses.md)
+    - [Addresses](./wallets/addresses.md)
     - [UTXO Sets](./wallets/utxo_sets.md)
     - [Transaction](./wallets/transactions.md)
     - [Storage](./wallets/storage.md)

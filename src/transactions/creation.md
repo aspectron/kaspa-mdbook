@@ -16,7 +16,7 @@
 ```
 UtxoSet is a custom collection designed to efficiently handle sorted collections of UTXOs.
 
-### Specify destination amounts and 
+### Specify destination amounts and create a transaction
 ```javascript
 
     let change_address = new Address("kaspatest:qz7ulu4c25dh7fzec9zjyrmlhnkzrg4wmf89q7gzr3gfrsj3uz6xjceef60sd");
