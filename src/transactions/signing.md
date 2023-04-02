@@ -31,3 +31,4 @@ In cases where inputs need to be signed externally, you can create a transaction
     let result = await rpc.submitTransaction({transaction, allowOrphan:false});
 
 ```
+

@@ -13,6 +13,8 @@
     - [Creation](./transactions/creation.md)
     - [Fee Calculation](./transactions/fee_calculation.md)
     - [Constraints](./transactions/constraints.md)
+    - [Time Locks](./transactions/time_locks.md)
+    - [SigHashes](./transactions/sighashes.md)
     - [Signing](./transactions/signing.md)
     - [Virtual Transactions](./transactions/virtual.md)
 - [Wallets](./wallets.md)
