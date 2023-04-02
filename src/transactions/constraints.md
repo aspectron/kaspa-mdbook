@@ -1,17 +1,28 @@
 # Constraints
 
 Kaspa transactions have the following constraints:
+- Transaction size
+- Dust outputs
+- Fees
+
 
 # Transaction size limits
+
+
+
+---
 one input mass = (input-size * mass_per_tx_byte) + (input-sig-op-count * mass_per_sig_op) 
 
 input-size = outpoint-size + u64 (storage for length of signature script) + signature script length + u64 (sequence)
 
 so one input mass = ((36 + 8 + 66<sup>*</sup> + 8) * 1) + (1 * 1000) = 1118
 
-*here value "66" is not fixed but depends on signature script length
+*here value "66" is not fixed but depends on signature script length; see `size += input.signature_script.len() as u64;`
+line in the `transaction_input_estimated_serialized_size()` function below.
 
-### Mass params
+---
+
+### Mass parameters
 ```rust
 pub const MAINNET_PARAMS: Params = Params {
     mass_per_tx_byte: 1,
@@ -86,19 +97,17 @@ let total_sigops_mass = total_sigops * self.mass_per_sig_op;
 ```
 
 
-There is a maximum number of inputs and outputs that is allowed for each transaction.
-
-# TODO ^^^
-
 # Dust
 
-A transaction output is considered dust, if its 
+A transaction output is considered dust, if: 
 ```rust
 (transaction_output.value * 1000 / (3 * transaction_output_serialized_size))
     < self.config.minimum_relay_transaction_fee
 ```
 
-### TODO - ADD HELPER API
+The following functions can be used to check if `TransactionOutput` is dust.
+- `TransactionOutput.isDust()`
+- `isTransactionOutputDust(transaction_output: TransactionOutput)`
 
 # Fees
 
