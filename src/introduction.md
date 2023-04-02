@@ -34,3 +34,9 @@ well as various helper classes for UTXO management.
 * [Rust documentation](https://docs.rs/kaspa-wasm/latest/kaspa_wasm/) (Rustdoc)
 * [JavaScript documentation](https://aspectron.com/docs/kaspa-wasm/) (JSDoc)
 
+# Redistributables
+
+WASM redistributables are available for web browsers and for nodejs. The entire framework can also be built from Rusty Kaspa sources (into WASM) or used within Rust directly for Rust-based application integration.
+
+You can currently download the latest version of the WASM SDK and to gRPC proxy from:
+[https://aspectron.com/en/projects/kaspa-wasm.html](https://aspectron.com/en/projects/kaspa-wasm.html)
