@@ -48,6 +48,9 @@ Various examples can be found here:
 - [Creating Transactions](https://github.com/aspectron/rusty-kaspa/tree/wasm-bindings/wasm/nodejs)
 - [interacting with RPC](https://github.com/aspectron/rusty-kaspa/blob/wallet-scaffolding/rpc/wrpc/wasm/nodejs/index.js)
 
+# Discord
+
+You can find help on the [Kaspa Discord](https://discord.com/invite/kS3SK5F36R) server, in the `#development` channel.
 
 # Redistributables
 
