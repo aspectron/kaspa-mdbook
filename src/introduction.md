@@ -35,6 +35,8 @@ well as various helper classes for UTXO management.
 
 # Documentation
 
+Please note that documentation is very much a work in progress.
+
 JavaScript and Rust API documentation is available at the following URLs:
 
 * [Rust documentation](https://docs.rs/kaspa-wasm/latest/kaspa_wasm/) (Rustdoc)
