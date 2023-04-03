@@ -3,7 +3,6 @@
 [Introduction](./introduction.md)
 
 - [Running](./running.md)
-- [Connecting](./connecting.md)
 - [UTXO Index](./utxo_index.md)
 - [Integrating](./integrating.md)
 - [RPC](./rpc.md)
