@@ -1,6 +1,5 @@
 # Transaction Mass
 
-
 ## Transaction mass limits
 
 Transaction mass is a value calculated from the transaction by applying different weights to transaction metrics. These metrics include the *mass per transaction byte*, *mass per script public key byte*, and *mass per signing operation*. Theese costs are network-specific and for the Mainnet have the following parameters:
