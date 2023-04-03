@@ -44,6 +44,10 @@ JavaScript and Rust API documentation is available at the following URLs:
 * [Rust documentation](https://docs.rs/kaspa-wasm/latest/kaspa_wasm/) (Rustdoc)
 * [JavaScript documentation](https://aspectron.com/docs/kaspa-wasm/) (JSDoc)
 
+Various examples can be found here:
+- [Creating Transactions](https://github.com/aspectron/rusty-kaspa/tree/wasm-bindings/wasm/nodejs)
+- [interacting with RPC](https://github.com/aspectron/rusty-kaspa/blob/wallet-scaffolding/rpc/wrpc/wasm/nodejs/index.js)
+
 
 # Redistributables
 
