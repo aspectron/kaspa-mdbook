@@ -1,6 +1,7 @@
 # Creation
 
 ### Get available UTXOs for a given set of addresses
+
 ```javascript
     let addresses = [
         new Address("kaspatest:qz7ulu4c25dh7fzec9zjyrmlhnkzrg4wmf89q7gzr3gfrsj3uz6xjceef60sd")
@@ -9,6 +10,7 @@
 ```
 
 ### Create a UTXO collection from the received UTXO set and select UTXOs needed for a transaction
+
 ```javascript
     let utxoSet = UtxoSet.from(utxos_by_address);
     let amount = 1000n;
@@ -17,8 +19,8 @@
 UtxoSet is a custom collection designed to efficiently handle sorted collections of UTXOs.
 
 ### Specify destination amounts and create a transaction
-```javascript
 
+```javascript
     let change_address = new Address("kaspatest:qz7ulu4c25dh7fzec9zjyrmlhnkzrg4wmf89q7gzr3gfrsj3uz6xjceef60sd");
     let output = new Output(
         new Address("kaspatest:qz7ulu4c25dh7fzec9zjyrmlhnkzrg4wmf89q7gzr3gfrsj3uz6xjceef60sd"),

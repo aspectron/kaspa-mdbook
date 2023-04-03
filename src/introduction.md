@@ -21,6 +21,8 @@ Please contribute! This `mdbook` is very easy to edit. If you would like to sugg
 
 This project is built using multi-platform Rust crates (libraries). The Rust framework is exposed to JavaScript via WASM, while the Rust framework itself can be built to run on any native platform (i.e. for Windows, Linux and MacOS).
 
+WASM32 is compatible with all major browsers and Node.js as well as environments such as [NWJS](https://nwjs.io).
+
 
 # WASM SDK
 
@@ -55,7 +57,8 @@ You can currently download the latest version of the WASM SDK and the gRPC proxy
 This SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/rusty-kaspa/rusty-kaspa](https://github.com/rusty-kaspa/rusty-kaspa)
 
 The following crates implement key functionality exposed by this SDK:
-* Kaspa Consensuse Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src)
+
+* Kaspa Consensus Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src)
 * WASM SDK: [https://github.com/kaspanet/rusty-kaspa/tree/master/wasm](https://github.com/kaspanet/rusty-kaspa/tree/master/wasm)
 * Wallet Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src)
 * RPC Client: [https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src](https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src)
