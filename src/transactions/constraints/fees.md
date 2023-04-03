@@ -25,35 +25,6 @@ A typical approach is to reserve an amount for fees or fallback if the selected 
 ## Calculating fees using mass
 
 The formula for the fee calculation using mass is as follows:
-### Calculate transaction mass
-transaction mass = ( tx-size * mass_per_tx_byte ) + ( total-ouput-script-size * mass_per_script_pub_key_byte ) + ( total-input-sigops * mass_per_sig_op )
-
-```rust
-let size = transaction_estimated_serialized_size(tx);
-let mass_for_size = size * self.mass_per_tx_byte;
-let total_script_public_key_size: u64 = tx
-    .outputs
-    .iter()
-    .map(|output| 2 /* script public key version (u16) */ + output.script_public_key.script().len() as u64)
-    .sum();
-let total_script_public_key_mass = total_script_public_key_size * self.mass_per_script_pub_key_byte;
-
-let total_sigops: u64 = tx.inputs.iter().map(|input| input.sig_op_count as u64).sum();
-let total_sigops_mass = total_sigops * self.mass_per_sig_op;
-
-let transaction_mass = mass_for_size + total_script_public_key_mass + total_sigops_mass
-```
-where the following values are based on the network configuration and for the Mainnet are as follows:
-
-```rust
-mass_per_tx_byte: 1,
-mass_per_script_pub_key_byte: 10,
-mass_per_sig_op: 1000,
-```
-
-Mass calculation code can be found here: [https://github.com/aspectron/rusty-kaspa/blob/wasm-bindings/consensus/core/src/mass/mod.rs#L59-L89](https://github.com/aspectron/rusty-kaspa/blob/wasm-bindings/consensus/core/src/mass/mod.rs#L59-L89)
-
-TODO - change the URL after PR merge to this: https://github.com/kaspanet/rusty-kaspa/blob/master/consensus/core/src/mass/mod.rs
 
 ### Calculate minimum fee based on transaction mass
 
