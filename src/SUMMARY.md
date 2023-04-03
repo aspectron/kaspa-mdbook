@@ -8,7 +8,7 @@
 - [Integrating](./integrating.md)
 - [RPC](./rpc.md)
 - [Transactions](./transactions.md)
-    - [Primitives](./transactions/primitives.md)
+    <!-- - [Primitives](./transactions/primitives.md) -->
     - [Constraints](./transactions/constraints.md)
         - [Transaction Size](./transactions/constraints/size.md)
         - [Dust Outputs](./transactions/constraints/dust.md)
