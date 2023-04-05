@@ -25,3 +25,8 @@ cargo run --release
 
 The resulting binary will be located in the workspace `target/` directory.
 
+# Docker
+
+Rusty Kaspa images based on Alpine linux can be found here:
+- Docker build scripts: https://github.com/supertypo/docker-rusty-kaspa
+- Published images: https://hub.docker.com/r/supertypo/rusty-kaspad
