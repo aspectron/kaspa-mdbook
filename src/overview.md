@@ -56,7 +56,7 @@ const KaspaMainnetPrivate = [4] byte {
 
 // KaspaMainnetPublic is the version that is used for
 // kaspa mainnet bip32 public extended keys.
-// Ecnodes to kpub in base58.
+// Encodes to kpub in base58.
 const KaspaMainnetPublic = [4] byte {
     0x03,
     0x8f,
