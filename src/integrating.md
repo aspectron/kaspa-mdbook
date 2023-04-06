@@ -1,6 +1,5 @@
 # Integrating
 
-
 ## Loading into a Web App
 
 Loading in a Web Browser requires an import of the JavaScript module and an async await for a bootstrap handler as follows:

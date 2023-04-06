@@ -2,6 +2,7 @@
 
 [Introduction](./introduction.md)
 
+- [Integration Overview](./overview.md)
 - [Running](./running.md)
 - [UTXO Index](./utxo_index.md)
 - [Integrating](./integrating.md)
