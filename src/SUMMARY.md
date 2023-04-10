@@ -20,6 +20,7 @@
     - [SigHashes](./transactions/sighashes.md)
     - [Signing](./transactions/signing.md)
     - [Virtual Transactions](./transactions/virtual.md)
+    - [Tracking](./transactions/tracking.md)
 - [Wallets](./wallets.md)
     - [Addresses](./wallets/addresses.md)
     - [UTXO Sets](./wallets/utxo_sets.md)
