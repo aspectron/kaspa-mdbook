@@ -14,5 +14,4 @@ Transaction records can also be looked up externally using the Kaspa block explo
 
 Due to the inability to get transaction by id, you can not tell exactly when a transactions have occurred. UTXOs do not contain any timestamp data, as such, you can only estimate the transaction timestamp based on the time the wallet has observed the transaction.
 
-
-
+There are plans for a new API call that will allow approximation of transaction timestamps using the DAA score.  This is planned for after the initial release of the Rusty Kaspa.
