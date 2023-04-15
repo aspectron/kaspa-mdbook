@@ -1,1 +1,1 @@
-# kaspa-wasm-book
+# kaspa-mdbook
