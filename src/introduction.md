@@ -27,7 +27,7 @@ WASM32 is compatible with all major browsers and Node.js as well as environments
 # WASM SDK
 
 This WASM SDK is generated directly from the Rusty Kaspa codebase, where Rust functions are compiled
-into WebAssembly and then are offered in the JavaScript environment as native JavaScript functions.
+into WebAssembly and then are offered in the JavaScript or TypeScript environments as native JavaScript functions.
 
 Since the WASM SDK has an integrated WebSocket support, it offers RPC connectivity
 turning all RPC calls into async function calls in JavaScript (in Rust these functions are also async).
@@ -37,16 +37,10 @@ well as various helper classes for UTXO management.
 
 # Documentation
 
-Please note that documentation is very much a work in progress.
-
-JavaScript and Rust API documentation is available at the following URLs:
+TypeScript and Rust API documentation is available at the following URLs:
 
 * [Rust documentation](https://docs.rs/kaspa-wasm/latest/kaspa_wasm/) (Rustdoc)
-* [JavaScript documentation](https://aspectron.com/docs/kaspa-wasm/) (JSDoc)
-
-Various examples can be found here:
-- [Creating Transactions](https://github.com/aspectron/rusty-kaspa/tree/wasm-bindings/wasm/nodejs)
-- [interacting with RPC](https://github.com/aspectron/rusty-kaspa/blob/wallet-scaffolding/rpc/wrpc/wasm/nodejs/index.js)
+* [TypeScript documentation](https://kaspa.aspectron.org/docs/) (TypeDoc is built for development releases)
 
 # Discord
 
@@ -56,8 +50,18 @@ You can find help on the [Kaspa Discord](https://discord.com/invite/kS3SK5F36R) 
 
 WASM redistributables are available prebuilt for web browsers and for nodejs. The entire framework can also be built from Rusty Kaspa sources (into WASM) or used within Rust directly for Rust-based application integration.
 
-You can currently download the latest version of the WASM SDK and the gRPC proxy from:
+You can currently download the latest version of the WASM SDK from:
 [https://aspectron.com/en/projects/kaspa-wasm.html](https://aspectron.com/en/projects/kaspa-wasm.html)
+
+# Development releases
+
+
+- [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> rusty-kaspa-wasm32-sdk-latest.zip](https://kaspa.aspectron.org/nightly/downloads/rusty-kaspa-wasm32-sdk-latest.zip)
+- [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> older releases ...](https://kaspa.aspectron.org/nightly/downloads/)
+
+# Building from source & examples
+
+Additional WASM SDK information can be found in the [WASM SDK README](https://github.com/aspectron/rusty-kaspa/blob/typescript/wasm/README.md)
 
 # Git
 
