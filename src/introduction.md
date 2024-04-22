@@ -21,7 +21,7 @@ Please contribute! This `mdbook` is very easy to edit. If you would like to sugg
 
 This project is built using multi-platform Rust crates (libraries). The Rust framework is exposed to JavaScript via WASM, while the Rust framework itself can be built to run on any native platform (i.e. for Windows, Linux and MacOS).
 
-WASM32 is compatible with all major browsers and Node.js as well as environments such as [NWJS](https://nwjs.io).
+WASM32 is compatible with all major browsers, Node.js as well as environments such as [NWJS](https://nwjs.io) and [Electron](https://www.electronjs.org/). It is also compatible with [Chrome Extension manifest version 3](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3), which allows it to be used in Chrome browser extensions.
 
 
 # WASM SDK
@@ -64,7 +64,7 @@ Additional WASM SDK information can be found in the [WASM SDK README](https://gi
 
 # Git
 
-This SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/rusty-kaspa/rusty-kaspa](https://github.com/rusty-kaspa/rusty-kaspa)
+This SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/kaspanet/rusty-kaspa](https://github.com/kaspanet/rusty-kaspa)
 
 The following crates implement key functionality exposed by this SDK:
 
