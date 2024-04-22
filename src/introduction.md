@@ -55,7 +55,6 @@ You can currently download the latest version of the WASM SDK from:
 
 # Development releases
 
-
 - [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> rusty-kaspa-wasm32-sdk-latest.zip](https://kaspa.aspectron.org/nightly/downloads/rusty-kaspa-wasm32-sdk-latest.zip)
 - [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> older releases ...](https://kaspa.aspectron.org/nightly/downloads/)
 
