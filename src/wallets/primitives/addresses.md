@@ -21,7 +21,7 @@ kaspa:qpauqsvk7yf9unexwmxsnmg547mhyga37csh0kj53q6xxgl24ydxjsgzthw5j
 kaspatest:qqnapngv3zxp305qf06w6hpzmyxtx2r99jjhs04lu980xdyd2ulwwmx9evrfz
 ```
 
-### Documentation
+### References
 - [`Address` class in WASM SDK](https://kaspa.aspectron.org/docs/classes/Address.html)
 - [WASM SDK JavaScript example](https://github.com/kaspanet/rusty-kaspa/blob/master/wasm/examples/nodejs/javascript/general/addresses.js)
 - [WASM SDK TypeScript example](https://github.com/kaspanet/rusty-kaspa/blob/master/wasm/examples/nodejs/typescript/src/address.ts)

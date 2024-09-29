@@ -46,7 +46,7 @@ The buckets are divided into three categories:
 
 Most wallets will use the `priority_bucket` and the first values of `normal_buckets` and `low_buckets` to offer users three choices: `priority`, `normal`, and `low` fee rates.
 
-## Documentation
+## References
 
 - [Rust SDK `get_fee_estimate_call` RPC method](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/prelude/api/rpc/trait.RpcApi.html#tymethod.get_fee_estimate_call)
 - [Rust SDK `RpcFeeEstimate` struct](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/prelude/struct.RpcFeeEstimate.html) returned inside the [`GetFeeEstimateResponse`](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/prelude/struct.GetFeeEstimateResponse.html)

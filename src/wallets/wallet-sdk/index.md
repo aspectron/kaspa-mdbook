@@ -8,13 +8,14 @@ Note that the Wallet SDK infrastructure [employs an event-based architecture](./
 
 ## UtxoProcessor
 
-[`UtxoProcessor`](https://kaspa.aspectron.org/docs/classes/UtxoProcessor.html) is a singleton representing the wallet interface. This can be viewed as a wallet - it connects to the node and ensures that all internal processing is handled correctly.  UtxoProcessor also provides an event processing interface where you can register for wallet-related event notifications.
+[`UtxoProcessor`](./infrastructure/utxo-processor.md) is a singleton representing the wallet interface. This can be viewed as a wallet - it connects to the node and ensures that all internal processing is handled correctly.  UtxoProcessor also provides an event processing interface where you can register for wallet-related event notifications.
 
 ## UtxoContext
 
-[`UtxoContext`](https://kaspa.aspectron.org/docs/classes/UtxoContext.html) interface represents a wallet account. It monitors any given subset of addresses and emits wallet-related events via the associated UtxoProcessor.  On creation, UtxoContext can be provided with an `id` (a.k.a. Account id). This `id` is posted with each UtxoContext-related event allowing you to distinguish different accounts in a multi-account subsystem.
+[`UtxoContext`](./infrastructure/utxo-context.md) interface represents a wallet account. It monitors any given subset of addresses and emits wallet-related events via the associated UtxoProcessor.  On creation, UtxoContext can be provided with an `id` (a.k.a. Account id). This `id` is posted with each UtxoContext-related event allowing you to distinguish different accounts in a multi-account subsystem.
 
 ## Transaction Generator
 
-Transaction [`Generator`](https://kaspa.aspectron.org/docs/classes/Generator.html) interface is designed to create transactions via UtxoContext or a manually supplied set of UTXOs.  Transaction generator simplifies transaction processing by dynamically calculating transaction mass, accounting for a custom transaction Fee Rate, creating daisy-chained (a.k.a. batch/sweep) transactions if your UTXO set exceeds the maximum mass allowed in a single transaction, and calculating the correct transaction change output.
+The Transaction [`Generator`](./infrastructure/generator.md) interface is designed to create transactions using either a `UtxoContext` or a manually supplied set of UTXOs. The `Transaction Generator` is a helper class that simplifies the transaction creation process and handles various edge cases that can arise during transaction generation.
 
+The Transaction Generator functions as an iterator, producing [`PendingTransaction`](./infrastructure/pending-transaction.md) objects. These transactions can either be aggregated or submitted to the network. Additionally, the generator produces [`GeneratorSummary`](./infrastructure/generator-summary.md) objects, which provide an overview of the entire transaction creation process.

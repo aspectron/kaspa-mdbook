@@ -3,10 +3,9 @@
 # Introduction
 
 
-This documentation covers Kaspa WASM SDK - Rust infrastructure (Rusty Kaspa) WASM bindings that allow Rust code to be used from within JavaScript/TypeScript environments.
+This documentation covers Kaspa Rust and WASM SDKs - Rust infrastructure (Rusty Kaspa) and WASM bindings that allow Rust code to be used from within JavaScript and TypeScript environments.
 
-Please contribute! This `mdbook` is very easy to edit. If you would like to suggest any changes or add anything, please check the [Contributing](./contributing.md) page.
-
+_Please contribute! This `mdbook` is very easy to edit. If you would like to suggest any changes or add anything, please check the [Contributing](./contributing.md) page._
 
 # Technologies 
 
@@ -15,14 +14,15 @@ Please contribute! This `mdbook` is very easy to edit. If you would like to sugg
 <img align="left" alt="JavaScript" height="32px" style="margin: 5px;" src="images/javascript.svg" />
 <img align="left" alt="TypeScript" height="32px" style="margin: 5px;" src="images/typescript.svg" />
 <img align="left" alt="NodeJS" height="32px" style="margin: 5px;" src="images/nodejs.svg" />
+<img align="left" alt="Bun" height="32px" style="margin: 5px;" src="images/bun.svg" />
+<img align="left" alt="Electron" height="32px" style="margin: 5px;" src="images/electron.svg" />
 <img align="left" alt="NWJS" height="32px" style="margin: 5px;" src="images/nwjs.svg" />
 
 <br/>&nbsp;<br/>
 
 This project is built using multi-platform Rust crates (libraries). The Rust framework is exposed to JavaScript via WASM, while the Rust framework itself can be built to run on any native platform (i.e. for Windows, Linux and MacOS).
 
-WASM32 is compatible with all major browsers, Node.js as well as environments such as [NWJS](https://nwjs.io) and [Electron](https://www.electronjs.org/). It is also compatible with [Chrome Extension manifest version 3](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3), which allows it to be used in Chrome browser extensions.
-
+WASM SDK is compatible with all major browsers, [Node.js](https://nodejs.org), [Bun](https://bun.sh) as well as environments such as [NWJS](https://nwjs.io) and [Electron](https://www.electronjs.org/). It is also compatible with [Chrome Extension manifest version 3](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3), which allows it to be used in Chrome browser extensions.
 
 # WASM SDK
 
@@ -46,29 +46,7 @@ TypeScript and Rust API documentation is available at the following URLs:
 
 You can find help on the [Kaspa Discord](https://discord.com/invite/kS3SK5F36R) server, in the `#development` channel.
 
-# Redistributables
-
-WASM redistributables are available prebuilt for web browsers and for nodejs. The entire framework can also be built from Rusty Kaspa sources (into WASM) or used within Rust directly for Rust-based application integration.
-
-You can currently download the latest version of the WASM SDK from:
-[https://aspectron.com/en/projects/kaspa-wasm.html](https://aspectron.com/en/projects/kaspa-wasm.html)
-
-# Development releases
-
-- [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> rusty-kaspa-wasm32-sdk-latest.zip](https://kaspa.aspectron.org/nightly/downloads/rusty-kaspa-wasm32-sdk-latest.zip)
-- [<img src="../../images/wasm.svg" style="inline-block; width: 18px; opacity: 0.5;" /> older releases ...](https://kaspa.aspectron.org/nightly/downloads/)
-
-# Building from source & examples
-
-Additional WASM SDK information can be found in the [WASM SDK README](https://github.com/aspectron/rusty-kaspa/blob/typescript/wasm/README.md)
-
 # Git
 
-This SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/kaspanet/rusty-kaspa](https://github.com/kaspanet/rusty-kaspa)
+WASM SDK is a part of a larger Rusty Kaspa framework available at [https://github.com/kaspanet/rusty-kaspa](https://github.com/kaspanet/rusty-kaspa)
 
-The following crates implement key functionality exposed by this SDK:
-
-* Kaspa Consensus Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/consensus/core/src)
-* WASM SDK: [https://github.com/kaspanet/rusty-kaspa/tree/master/wasm](https://github.com/kaspanet/rusty-kaspa/tree/master/wasm)
-* Wallet Core: [https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src](https://github.com/kaspanet/rusty-kaspa/tree/master/wallet/core/src)
-* RPC Client: [https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src](https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/wrpc/client/src)
