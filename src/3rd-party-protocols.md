@@ -8,9 +8,13 @@ As of the time of writing, the following 3rd party protocols are available for K
 
 Kasplex protocol is a KRC-20 token standard that can be used to build tokenized assets on top of the Kaspa network.
 
+### Website
+
+- [Kasplex at https://kasplex.org](https://kasplex.org)
+
 ### Documentation
 
-- [Kasplex Documentation at https://docs.kasplex.org/](https://docs.kasplex.org/)
+- [Kasplex Documentation at https://docs.kasplex.org](https://docs.kasplex.org/)
 
 ### Examples
 

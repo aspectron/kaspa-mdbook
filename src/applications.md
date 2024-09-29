@@ -15,7 +15,7 @@ kaspa-cli
 ```
 Once running, you can type `help` or `settings` commands. 
 
-By default, `kaspa-cli` connects to the Public Node Network (PNN).
+By default, `kaspa-cli` connects to the Public Node Network (PNN). You can use `server <wRPC-url>` to change the RPC endpoint and `network` to change the network type.
 
 ## Kaspa NG
 

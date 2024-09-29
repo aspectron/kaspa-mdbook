@@ -2,7 +2,9 @@
 
 ## Loading into a Web App
 
-Loading in a Web Browser requires an import of the JavaScript module and an async await for a bootstrap handler as follows:
+Loading in a Web Browser requires an import of the JavaScript module and an async await for a bootstrap handler as follows.
+
+### Example
 
 ```html
 <html>
@@ -11,6 +13,9 @@ Loading in a Web Browser requires an import of the JavaScript module and an asyn
             import * as kaspa_wasm from './kaspa/kaspa-wasm.js';
             (async () => {
                 const kaspa = await kaspa_wasm.default('./kaspa/kaspa-wasm_bg.wasm');
+                // you are now ready to use the kaspa object
+                // print the version of WASM SDK into the browser console
+                console.log(kaspa.version());
             })();
         </script>
     </head>
@@ -20,22 +25,33 @@ Loading in a Web Browser requires an import of the JavaScript module and an asyn
 
 ## Loading into a Node.js App
 
-For Node.js, Kaspa WASM SDK is available as a regular Node.js module that can be loaded using require().
+For Node.js, Kaspa WASM SDK is available as a regular common-js module that can be loaded using the `require()` function.
+
+### Example
 
 ```javascript
 // W3C WebSocket module shim
+// (not needed in a browser or Bun)
+// @ts-ignore
 globalThis.WebSocket = require('websocket').w3cwebsocket;
 
-let {RpcClient,Encoding,init_console_panic_hook,defer} = require('./kaspa-rpc');
-// init_console_panic_hook();
+let kaspa = require('./kaspa');
+let { RpcClient, Resolver } = kaspa;
 
-let URL = "ws://127.0.0.1:17110";
-let rpc = new RpcClient(Encoding.Borsh,URL);
+kaspa.initConsolePanicHook();
+
+const rpc = new RpcClient({
+    // url : "127.0.0.1",
+    resolver: new Resolver(),
+    networkId : "mainnet",
+});
 
 (async () => {
     await rpc.connect();
-    let info = await rpc.getInfo();
-    console.log(info);
+
+    console.log(`Connected to ${rpc.url}`)
+    const info = await rpc.getBlockDagInfo();
+    console.log("GetBlockDagInfo response:", info);
 
     await rpc.disconnect();
 })();
@@ -44,16 +60,21 @@ let rpc = new RpcClient(Encoding.Borsh,URL);
 ### The Node.js WebSocket shim
 
 To use WASM RPC client in the Node.js environment, you need to introduce a W3C WebSocket-compatible object
-before loading the WASM32 library. You can use any Node.js module that exposes a W3C-compatible
-WebSocket implementation. Two of such modules are [WebSocket](https://www.npmjs.com/package/websocket)
-(provides a custom implementation) and [isomorphic-ws](https://www.npmjs.com/package/isomorphic-ws)
-(built on top of the ws WebSocket module).
+before using the `RpcClient` class. You can use any Node.js module that exposes a W3C-compatible
+WebSocket implementation. The recommended package that implements this functionality is 
+[WebSocket](https://www.npmjs.com/package/websocket).
 
-You can use the following shims:
+Add the following to your `package.json`: 
+
+```json
+"dependencies": {
+    "websocket": "1.0.34",
+}
+```
+
+Following that, you can use the following shim:
 
 ```js
 // WebSocket
 globalThis.WebSocket = require('websocket').w3cwebsocket;
-// isomorphic-ws
-globalThis.WebSocket = require('isomorphic-ws');
 ```

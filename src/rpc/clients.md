@@ -22,10 +22,11 @@
 - [wRPC client methods](https://github.com/kaspanet/rusty-kaspa/blob/master/rpc/wrpc/examples/simple_client/src/main.rs)
 - [wRPC client subscriptions](https://github.com/kaspanet/rusty-kaspa/blob/master/rpc/wrpc/examples/subscriber/src/main.rs)
 
+## Rust SDK - gRPC
+
+- [GrpcClient struct](https://github.com/kaspanet/rusty-kaspa/blob/master/rpc/grpc/client/src/lib.rs) implementation.
+
 ## gRPC `.proto` definitions
 
 gRPC integration provides `.proto` files that can be used to generate client code in multiple languages. gRPC `.proto` files `messages.proto` and `rpc.proto` can be found in the Rusty Kaspa repository at [https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/grpc/core/proto](https://github.com/kaspanet/rusty-kaspa/tree/master/rpc/grpc/core/proto).
 
-## Rust SDK - gRPC
-
-- [GrpcClient struct](https://github.com/kaspanet/rusty-kaspa/blob/master/rpc/grpc/client/src/lib.rs) implementation.

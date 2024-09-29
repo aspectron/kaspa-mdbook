@@ -1,19 +1,17 @@
 # Summary
 
 [Introduction](./introduction.md)
-
-<!-- - [Integration Overview](./overview.md) -->
+- [Documentation](./documentation.md)
 - [Running Rusty Kaspa](./running-rusty-kaspa.md)
-<!-- - [UTXO Index](./utxo-index.md) -->
 - [Integrating with WASM](./integrating-wasm/index.md)
     - [Security Considerations](./integrating-wasm/security.md)
     - [Building from Source](./integrating-wasm/building-from-source.md)
     - [Redistributables](./integrating-wasm/redistributables.md)
     - [Examples](./integrating-wasm/examples.md)
 - [Explorers](./explorers.md)
+- [Faucets & Mining](./faucets-mining.md)
 - [Applications](./applications.md)
 - [3rd Party Protocols](./3rd-party-protocols.md)
-<!-- - RPC -->
 - [RPC](./rpc/index.md)
     - [Protocols](./rpc/protocols.md)
     - [Clients](./rpc/clients.md)
@@ -30,8 +28,6 @@
         - [Fee Rate & QoS](./transactions/fees/fee-rate-qos.md)
     - [Batch Transactions](./transactions/batch-transactions.md)
     - [Miner Selection](./transactions/mininer-selection.md)
-
-
 - [Wallets](./wallets/index.md)
     <!-- - [Overview](./wallets/overview.md) -->
     - [Primitives](./wallets/primitives/index.md)
@@ -54,25 +50,4 @@
             - [Balance Events](./wallets/wallet-sdk/events/balance-events.md)
         - [Transaction Timestamps](./wallets/wallet-sdk/timestamps.md)
     - [Wallet API](./wallets/wallet-api/index.md)
-
-[Contributing](./contributing.md)
-
-
-    <!-- - [Primitives](./transactions/primitives.md) -->
-    <!-- - [Constraints](./transactions/constraints.md) -->
-        <!-- - [Transaction Size](./transactions/constraints/size.md) -->
-        <!-- - [Dust Outputs](./transactions/constraints/dust.md) -->
-        <!-- - [Mass](./transactions/constraints/mass.md) -->
-        <!-- - [Fee Calculation](./transactions/constraints/fees.md) -->
-    <!-- - [Monitoring UTXOs](./transactions/monitoring.md) -->
-    <!-- - [Creation](./transactions/creation.md) -->
-    <!-- - [Time Locks](./transactions/time_locks.md) -->
-    <!-- - [SigHashes](./transactions/sighashes.md) -->
-    <!-- - [Signing](./transactions/signing.md) -->
-    <!-- - [Virtual Transactions](./transactions/virtual.md) -->
-    <!-- - [Tracking](./transactions/tracking.md) -->
-
-    <!-- - [UTXO Sets](./wallets/primitives/utxo_sets.md) -->
-    <!-- - [Transaction](./wallets/primitives/transactions.md) -->
-    <!-- - [Storage](./wallets/primitives/storage.md) -->
-    <!-- - [Accounts](./wallets/primitives/accounts.md) -->
+- [Contributing](./contributing.md)
