@@ -11,6 +11,6 @@ Faucets provide developers to quickly obtain testnet coins for development and t
 
 # CPU miners
 
-The following high-performance CPU miner is available for mining on the Kaspa testnet:
+The following high-performance CPU miner is available for mining on the Kaspa testnets:
 
 [https://github.com/elichai/kaspa-miner](https://github.com/elichai/kaspa-miner)
