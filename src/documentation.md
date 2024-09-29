@@ -1,6 +1,6 @@
 # Documentation
 
-- [Rusty Kaspa README.md](https://github.com/kaspanet/rusty-kaspa/blob/master/README.md) contains build instructions for the Rusty Kaspa framework.
+- [Rusty Kaspa README](https://github.com/kaspanet/rusty-kaspa/blob/master/README.md) contains build instructions for the Rusty Kaspa framework.
 - [WASM SDK README](https://github.com/kaspanet/rusty-kaspa/blob/master/wasm/README.md) contains build instructions for the WASM SDK as well as instructions on running WASM SDK examples.
 
 
