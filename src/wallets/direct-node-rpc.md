@@ -13,6 +13,12 @@ When using [`RpcClient`](https://kaspa.aspectron.org/docs/classes/RpcClient.html
 
 ## Subscribing for Event Notifications
 
+#### IMPORTANT
+
+_There are two type of subscriptions - **local subscription** to the RPC subsystem and **remote subscription** to the Kaspa node.  If the RPC client disconnects and reconnects, your local subscription (event listener registration or Rust channel receiver handling) will remain intact, however, the remote subscription will be lost.  You will have to resubscribe for notifications against the node._
+
+_The best way to handle this is to listen to RPC events such as `connect` and subscribe to node notifications from within this handler._
+
 ### WASM SDK
 
 For each instance of the `RpcClient`, you must register an event listener once, but you must subscribe for node notifications each time you connect to the node - on connection, you have to inform the node that you are interested in specific events so that the node can start posting these events to your `RpcClient` instance.
@@ -33,7 +39,7 @@ rpc.addEventListener("utxos-changes", (event) => {
 
 ### Rust SDK (wRPC only)
 
-In the Rust SDK, event notifications are provided via [async channels](https://docs.rs/async-channel/latest/async_channel/), which transport the [Notification](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/prelude/enum.Notification.html) enum. A clone of the notification channel can be obtained by calling [`KaspaRpcClient::notification_channel_receiver()`](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/client/struct.KaspaRpcClient.html#method.notification_channel_receiver).
+In the Rust SDK, event notifications are provided via [async channels](https://docs.rs/async-channel/latest/async_channel/), that transport the [Notification](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/prelude/enum.Notification.html) enum. A clone of the notification channel can be obtained by calling [`KaspaRpcClient::notification_channel_receiver()`](https://docs.rs/kaspa-wrpc-client/latest/kaspa_wrpc_client/client/struct.KaspaRpcClient.html#method.notification_channel_receiver).
 
 Event notification handling in the Rust SDK is somewhat more complex due to the multi-layered nature of the RPC stack. There are three layers involved in handling event notifications:
 
