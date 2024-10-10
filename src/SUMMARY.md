@@ -16,6 +16,7 @@
     - [Protocols](./rpc/protocols.md)
     - [Clients](./rpc/clients.md)
     - [Port Selection](./rpc/ports.md)
+    - [Checking Availability](./rpc/availability.md)
     - [Public Node Network (PNN)](./rpc/pnn.md)
     - [Kaspa Resolver](./rpc/kaspa-resolver.md)
     - [kHOST](./rpc/khost.md)

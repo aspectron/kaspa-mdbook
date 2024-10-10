@@ -11,7 +11,6 @@ For local interface binding, you can specify `127.0.0.1` or `localhost` as the I
 
 **NOTE:** Rusty Kaspa does not have a specific port for the `Testnet` network type. The `1*210` port is used for all testnet networks. However, when running two testnet nodes on the same machine, it is customary to use `16210` for `Testnet-10` and `16310` for `Testnet-11`. As such, these ports are listed as defaults. However, if you simply pass the `--testnet` flag to `kaspad`, it will assign the default testnet port of `1*210` regardless of the testnet network ID.
 
-
 ## Default gRPC Ports
 - `Mainnet`: `16110`
 - `Testnet-10`: `16210`
