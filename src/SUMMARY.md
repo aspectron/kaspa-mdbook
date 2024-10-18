@@ -21,6 +21,7 @@
     - [Kaspa Resolver](./rpc/kaspa-resolver.md)
     - [kHOST](./rpc/khost.md)
     - [HTTP Proxies](./rpc/proxies.md)
+    - [Connecting to RPC](./rpc/connecting.md)
 - [Transactions](./transactions/index.md)
     - [Transaction Fees](./transactions/fees/index.md)
         - [Compute Mass](./transactions/fees/compute-mass.md)
