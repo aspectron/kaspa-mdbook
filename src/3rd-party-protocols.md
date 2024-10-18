@@ -18,5 +18,5 @@ Kasplex protocol is a KRC-20 token standard that can be used to build tokenized 
 
 ### Examples
 
-- [KRC-20 Apps by Coinchimp](https://github.com/coinchimp/kaspa-krc20-apps/)
-
+- [KRC-20 Javascript Apps by Coinchimp](https://github.com/coinchimp/kaspa-krc20-apps/)
+- [WIP Protocol abstracted Rust Indexer by Aspect](https://github.com/aspectron/sparkle/blob/pnn-v1/nexus/src/analyzer.rs)
